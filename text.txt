@@ -1,0 +1,61 @@
+Understanding Tailwind CSS
+Tailwind CSS is a utility-first framework that enables you to write more concise and maintainable CSS code by providing a set of predefined classes that can be used directly in your HTML. 
+These classes include: flex pt-4 text-center rotate-90 and many more...
+
+Bootstrap vs Tailwind CSS
+Bootstrap: Pre-designed UI components, layouts, and templates
+Tailwind CSS: Low-level utility classes
+
+Components including: Navigation, Alerts, Buttons, Dropdowns, Forms, Images, Tables, and many more...
+
+Example: Creating a Button using tailwind css:
+
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  hello World
+</button>
+
+Another Example:
+"index.html"
+<div>
+  <div class="box">Item1</div>
+  <div class="box">Item2</div>
+  <div class="box">Item3</div>
+</div>
+
+"style.css"
+@layer components {
+  .box {
+    @apply h-10 w-20 bg-blue-200;
+  }
+}
+
+
+*********INSTALLATION*********
+Installing Node.js and Tailwind CSS
+Install Node.js
+    Download and install Node.js from the official website. [https://nodejs.org/en/download/prebuilt-installer]
+
+Create folder and open these created folder in VSC and Run new terminal.
+
+Initialize npm
+    Run the command "npm init" and create a package name "Package".
+
+Install Tailwind CSS
+    Run the command "npm install -D tailwindcss" to install Tailwind CSS as a development dependency.
+
+Create a tailwind.config.js file
+    Run the command "npx tailwindcss init" to create a new tailwind.config.js file.
+
+Creating a tailwind css style
+     Run the command "npx tailwindcss -i ./styles/input.css -o ./styles/output
+    .css --watch" it will create two style [input.css & output.css]
+
+
+Download some image src.
+
+Some Link to learn Tailwind
+https://tailkit.com/
+https://tailwindui.com/components
+https://tailwindcss.com/docs/flex
+https://tailgrids.com/
+https://tailwindflex.com/
